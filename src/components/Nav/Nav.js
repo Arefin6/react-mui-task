@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
       background:'#F7F6Fb',
       color:'#666666',
       boxShadow:'none',
-      maxHeight:'30vh'
+      maxHeight:'30vh',
+      borderBottom:'1px solid #666'
     },
     nav:{
        marginLeft:'auto',
