@@ -1,4 +1,5 @@
 import './App.css';
+import CompanyForm from './components/CompanyForm/CompanyForm';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Nav></Nav>
       <Header></Header>
+      <CompanyForm></CompanyForm>
     </div>
   );
 }

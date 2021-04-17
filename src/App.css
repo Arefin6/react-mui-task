@@ -1,4 +1,10 @@
+body{
+  background-color: #F7F6Fb;
+}
 .header img{
   padding: .5rem;
+}
+.text:focus{
+  outline: red;
 }
 
