@@ -9,6 +9,7 @@ function App() {
       <Nav></Nav>
       <Header></Header>
       <CompanyForm></CompanyForm>
+    
     </div>
   );
 }

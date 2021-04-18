@@ -1,6 +1,7 @@
 import {Button, FormLabel, Grid,TextareaAutosize, TextField } from '@material-ui/core';
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
+import Benefits from '../Benifites/Benefits';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -136,6 +137,7 @@ const CompanyForm = () => {
                   className={classes.addBtn}
                   >Add Benefits</Button>
                 </Grid>
+                <Benefits></Benefits>
                
 
               </Grid>
