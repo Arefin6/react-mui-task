@@ -40,4 +40,15 @@ body{
   background-color: #F77631;
   border: #fff;
 }
-
+.footer{
+  color: #fff;
+  background-color: #2A3B8F;
+  padding: 2rem;
+}
+.links{
+  margin-left: 40%;
+  display: flex;
+}
+.links h4{
+  margin-right: 10px;
+}
