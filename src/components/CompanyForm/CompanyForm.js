@@ -1,7 +1,8 @@
 import {Button, FormLabel, Grid,TextareaAutosize, TextField } from '@material-ui/core';
-import React from 'react';
+import React, { useState } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Benefits from '../Benifites/Benefits';
+import AddBenefitModal from '../AddBenefitModal/AddBenefitModal';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft:'80%',
       borderRadius: '24px 24px 24px 24px',
       padding:'20px'
-    }
+    },
  
    
   }));
@@ -30,6 +31,14 @@ const useStyles = makeStyles((theme) => ({
 
 const CompanyForm = () => {
     const classes = useStyles();
+    const [open,setOpen] = useState(false)
+
+    const handleClose = () =>{
+      setOpen(false)
+    }
+    const handleOpen = () =>{
+      setOpen(true)
+    }
     return (
         <>
          <form className={classes.root}>
@@ -135,11 +144,11 @@ const CompanyForm = () => {
                   <Button
                   variant="outlined"
                   className={classes.addBtn}
+                  onClick={handleOpen}
                   >Add Benefits</Button>
                 </Grid>
+                <AddBenefitModal open={open} handleClose={handleClose}></AddBenefitModal>
                 <Benefits></Benefits>
-               
-
               </Grid>
          </form> 
         </>
